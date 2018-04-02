@@ -1,0 +1,22 @@
+main{
+  background-image: url("../images/dmitrii-vaccinium-22833-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+
+h3{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.jumbotron{
+  background: #242424;
+  border-color: black;
+}
+
+.card{
+  background: #242424;
+  border-color: black;
+}

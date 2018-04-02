@@ -12,14 +12,82 @@
 </head>
 
 <body>
-<main>
+  <main>
+    <div class="container">
+
+      <br>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1 class="text-center">Chugga Chugga</h1>
+      </div>
+
+      <div class="row">
 
 
+        <div class="col-lg-4">
+          <div class="card card-default">
+            <div class="card-title bg-primary">
+              <h3>New Train</h3>
+            </div>
 
-</main> 
+            <div class="card-body">
+
+              <form role="form">
+                <div class="form-group">
+                  <label for="train-name">Train Name:</label>
+                  <input class="form-control" id="train-name" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="destination-input">Destination:</label>
+                  <input class="form-control" id="destination-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="first-time">First Train Time:</label>
+                  <input class="form-control" id="first-time" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="frequency-input">Frequency (minutes)</label>
+                  <input class="form-control" id="frequency-input" type="text">
+                </div>
+                <button class="btn btn-default" id="add-train" type="submit">Submit</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Most Recent Member Panel -->
+        <div class="col-lg-8">
+          <div class="card card-default">
+            <div class="card-heading">
+              <h3 class="card-title bg-primary">Trains</h3>
+            </div>
+            <div class="card-body">
+              <table class="table table-hover" id='train-table'>
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmH6-actqHuSHWt5Kdvp6TzpMbdjcCirY&libraries=places&callback=initAddr"
-    async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="./assets/javascript/app.js"></script>
 </body>
 
