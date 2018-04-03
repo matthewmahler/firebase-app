@@ -17,6 +17,7 @@ h3{
 }
 
 .card{
+  margin: 30px 0 ;
   background: #242424;
   border-color: black;
 }
